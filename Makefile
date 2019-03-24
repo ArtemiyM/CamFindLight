@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=-Wall -O -pipe  `pkg-config --cflags --libs opencv`
+CFLAGS=-Wall -O -pipe -lwiringPi `pkg-config --cflags --libs opencv`
 LDFLAGS=-lm `pkg-config --libs opencv`
 
 OBJ=ball_detection
